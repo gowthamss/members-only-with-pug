@@ -1,0 +1,27 @@
+{
+    "name": "members-only-with-pug",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "devstart": "nodemon ./bin/www",
+        "serverstart": "SET DEBUG=members-only-with-pug:* & npm run devstart"
+    },
+    "dependencies": {
+        "async": "^3.2.2",
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "^10.0.0",
+        "express": "~4.16.1",
+        "express-validator": "^6.14.0",
+        "http-errors": "~1.6.3",
+        "luxon": "^2.3.0",
+        "mongoose": "^6.1.5",
+        "morgan": "~1.9.1",
+        "nodemon": "^2.0.15",
+        "passport": "^0.5.2",
+        "passport-local": "^1.0.0",
+        "pug": "2.0.0-beta11"
+    }
+}
