@@ -8,7 +8,13 @@ html
     nav 
         div.logo Members Only
         ul 
-            li Log In 
-            li Sign Up 
+          if !user
+            li 
+              a(href='/login') Login 
+            li 
+              a(href='signup') Sign Up 
+          else
+            li 
+              a(href='/logout') Logout 
 
     block content

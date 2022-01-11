@@ -2,4 +2,8 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  if user
+    p Welcome #{user.first_name} #{user.last_name}
+    a(href='/post/create') Create a new message
+  else 
+    p Welcome Guest
